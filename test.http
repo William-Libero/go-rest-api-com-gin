@@ -1,0 +1,36 @@
+POST http://localhost:8080/alunos HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+  "nome": "aluno 2",
+  "RG": "498320431",
+  "CPF": "44988732894"
+}
+###
+GET http://localhost:8080/alunos HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+###
+GET http://localhost:8080/alunos/1 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+###
+DELETE http://localhost:8080/alunos/3 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+###
+PUT http://localhost:8080/alunos/500 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+  "nome": "aluno 4",
+  "RG": "498320431",
+  "CPF": "44988732894"
+}
+###
+GET http://localhost:8080/alunos/cpf/44988732894 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+###
